@@ -32,19 +32,19 @@ const projects = [
   },
   {
     id: 4,
+    title: "Study Tracking App",
+    description: "A program that tracks the user's study progress and provides personalized recommendations for improvement.",
+    githubUrl: "https://github.com/Euna-kim-1/Study_tracking_app",
+    liveDemoUrl: "https://study-tracking-app.vercel.app/",
+    image: "/project7.png", 
+  },
+  {
+    id: 5,
     title: "Snake Game",
     description: "A program is a classic snake game where players control a growing snake to eat food while avoiding collisions with walls and themselves.",
     githubUrl: "https://github.com/Euna-kim-1/Snake_game.git",
     liveDemoUrl: "/videos/snake_game-1.mp4",
     image: "/project3.png", 
-  },
-  {
-    id: 5,
-    title: "Turtle Crossing Game",
-    description: "A program tasks players with guiding a turtle safely across a road.",
-    githubUrl: "https://github.com/Euna-kim-1/Turtle_crossing_game.git",
-    liveDemoUrl: "/videos/turtle_crossing.mp4",
-    image: "/project4.png", 
   },
   {
     id: 6,

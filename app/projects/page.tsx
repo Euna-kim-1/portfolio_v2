@@ -34,9 +34,9 @@ const projects = [
     id: 4,
     title: "Study Tracking App",
     description: "A program that tracks the user's study progress and provides personalized recommendations for improvement.",
-    githubUrl: "https://github.com/Euna-kim-1/Study_tracking_app",
-    liveDemoUrl: "https://study-tracking-app.vercel.app/",
-    image: "/project7.png", 
+    githubUrl: "https://github.com/jw-noah-park/study-tracking-app",
+    liveDemoUrl: "https://study-tracking-app-three.vercel.app/",
+    image: "/project8.png", 
   },
   {
     id: 5,

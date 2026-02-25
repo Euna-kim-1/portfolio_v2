@@ -4,56 +4,55 @@ import Header from "../components/Header";
 import Image from "next/image";
 import { useState } from "react";
 
-const projects = [
-  {
-    id: 1,
-    title: "Next Stop - Travel Planner",
-    description: "AI-powered travel planning web app that generates personalized trip recommendations based on user preferences and budget.",
-    githubUrl: "https://github.com/Euna-kim-1/hackathon-web",
-    liveDemoUrl: "https://www.linkedin.com/posts/seunggyu-park_hackathon-yyctech-ai-activity-7290783337009295362-xn1H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENe8OoBCwblEIA7Cw3t1xnTwG3IywNw7rk",
-    image: "/project1.png", 
-  },
-  {
-    id: 2,
-    title: "CaCart",
-    description: "CaCart, the only e-commerce solutions you need to grow your business.",
-    githubUrl: "https://github.com/Snow-Penguins/cacart",
-    liveDemoUrl: "https://ca-cart-frontend.vercel.app/",
-    image: "/project2.png", 
-  },
-  {
-    id: 3,
-    title: "Acupuncture Clinic Website",
-    description: "A streamlined online booking application for a personal acupuncture clinic.",
-    githubUrl: "https://github.com/ElleLeee/capstone",
-    liveDemoUrl: "/videos/cliniclivedemo.mp4",
-    isVideo: true,
-    image: "/project1-1.png", 
-  },
-  {
-    id: 4,
-    title: "Study Tracking App",
-    description: "A program that tracks the user's study progress and provides personalized recommendations for improvement.",
-    githubUrl: "https://github.com/jw-noah-park/study-tracking-app",
-    liveDemoUrl: "https://study-tracking-app-three.vercel.app/",
-    image: "/project8.png", 
-  },
-  {
-    id: 5,
-    title: "Snake Game",
-    description: "A program is a classic snake game where players control a growing snake to eat food while avoiding collisions with walls and themselves.",
-    githubUrl: "https://github.com/Euna-kim-1/Snake_game.git",
-    liveDemoUrl: "/videos/snake_game-1.mp4",
-    image: "/project3.png", 
-  },
-  {
-    id: 6,
-    title: "US State Game",
-    description: "Players guess the names of US states, and if they guess correctly, the corresponding state is displayed on the map.",
-    githubUrl: "https://github.com/Euna-kim-1/us-state-game",
-    liveDemoUrl: "/videos/us_state_game.mp4",
-    image: "/project5.png", 
-  },
+const projects = [{
+  id: 1,
+  title: "DAMDA",
+  description: "A grocery price comparison and receipt history web app that helps users find products nearby and keep purchase records in one place.",
+  githubUrl: "https://github.com/Euna-kim-1/damda-info",
+  liveDemoUrl: "https://damda-info-4wc7.vercel.app/",
+  image: "/project12.png",
+},
+{
+  id: 2,
+  title: "Next Stop - Travel Planner",
+  description: "AI-powered travel planning web app that generates personalized trip recommendations based on user preferences and budget.",
+  githubUrl: "https://github.com/Euna-kim-1/hackathon-web",
+  liveDemoUrl: "https://www.linkedin.com/posts/seunggyu-park_hackathon-yyctech-ai-activity-7290783337009295362-xn1H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAENe8OoBCwblEIA7Cw3t1xnTwG3IywNw7rk",
+  image: "/project1.png",
+},
+{
+  id: 3,
+  title: "CaCart",
+  description: "CaCart, the only e-commerce solutions you need to grow your business.",
+  githubUrl: "https://github.com/Snow-Penguins/cacart",
+  liveDemoUrl: "https://ca-cart-frontend.vercel.app/",
+  image: "/project2.png",
+},
+{
+  id: 4,
+  title: "Acupuncture Clinic Website",
+  description: "A streamlined online booking application for a personal acupuncture clinic.",
+  githubUrl: "https://github.com/ElleLeee/capstone",
+  liveDemoUrl: "/videos/cliniclivedemo.mp4",
+  isVideo: true,
+  image: "/project1-1.png",
+},
+{
+  id: 5,
+  title: "Study Tracking App",
+  description: "A program that tracks the user's study progress and provides personalized recommendations for improvement.",
+  githubUrl: "https://github.com/jw-noah-park/study-tracking-app",
+  liveDemoUrl: "https://study-tracking-app-three.vercel.app/",
+  image: "/project8.png",
+},
+{
+  id: 6,
+  title: "Snake Game",
+  description: "A program is a classic snake game where players control a growing snake to eat food while avoiding collisions with walls and themselves.",
+  githubUrl: "https://github.com/Euna-kim-1/Snake_game.git",
+  liveDemoUrl: "/videos/snake_game-1.mp4",
+  image: "/project3.png",
+}
 ];
 
 export default function ProjectsPage() {
@@ -73,7 +72,7 @@ export default function ProjectsPage() {
   return (
     <div className="bg-white relative min-h-screen">
       <Header />
-      
+
       <main className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 py-16 md:py-20">
         <div className="mb-12 text-center">
           <p className="text-lg text-amber-700 mb-2">Browse My Recent</p>
@@ -286,11 +285,11 @@ export default function ProjectsPage() {
 
       {/* Video Modal */}
       {selectedVideo && (
-        <div 
+        <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
           onClick={() => setSelectedVideo(null)}
         >
-          <div 
+          <div
             className="relative max-w-4xl w-full mx-4"
             onClick={(e) => e.stopPropagation()}
           >
